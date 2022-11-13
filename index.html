@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajou</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <nav id="nav-bar" class="navbar bg-light px-3 mb-3">
+      <a class="navbar-brand" href="#">Viajou!</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#cards">Pacotes/Viagens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#form-container">Quero Viajar</a>
+        </li>
+      </ul>
+    </nav>
+    <div class='landing-container data-bs-spy="scroll" data-bs-target="#nav-bar"'>
+      <div class="hero">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="/public/images/map.jpg" class="d-block mx-lg-auto img-fluid rounded-lg-3" alt="Bootstrap Themes"
+                loading="lazy" width="700" height="500">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1  mb-3">Encontre seu Caminho</h1>
+              <p class="lead ">Melhores destinos e nos mais variados pacotes de viagens que você vai encontrar.</p>
+              <p class="lead ">Hospedagem, passeios, eventos tudo feito para você ter a melhor viagem de todas.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a class="btn btn-primary w-50" aria-current="page" href="#form-container">Entre em contato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" id='cards'>
+        <div class="card" style="width: 18rem;">
+          <img src="/public/images/travel-map.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Viagens internacionais</h5>
+            <p class="card-text">Temos os melhores destinos internacionais com preços imperdíveis.</p>
+            <a href="#form-container" class="btn btn-primary w-100">Saiba mais</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/public/images/montain.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Recordações</h5>
+            <p class="card-text">Os melhores pacotes para você e sua família terem momentos inesquecíveis</p>
+            <a href="#form-container" class="btn btn-primary w-100">Saiba mais</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/public/images/travel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Descanse</h5>
+            <p class="card-text" style="font-size: 14px;">Não se preocupe em ficar organizando viagens, montamos seu pacote personalizado sem custos adicionais</p></p>
+            <a href="#form-container" class="btn btn-primary w-100">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="form-container" id="form-container">
+        <div class="form-internal-container">
+          <div class="col-lg-5">
+            <h1 class="display-6 fw-semibold lh-1 mb-2">Sua viagem está quase pronta</h1>
+            <p class="lead ">Para continuar o processo por favor preencha o formulário e entraremos em contato o mais rápido possível</p>
+          </div>
+          <form id="form" class="form-card">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="row g-3">
+              <div class="mb-3 col">
+                <label for="name" class="form-label">Nome</label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 col">
+                <label for="phone" class="form-label">Celular</label>
+                <input type="text" class="form-control" id="phone" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div  class="galery-container">
+        <div class="galery">
+          <div class="row">
+            <h1 style="text-align: center; color: white; background-color: #95aa5b;">Galeria</h1>
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="/public/images/travel2.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+          
+              <img
+                src="/public/images/travel3.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="/public/images/travel4.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+              />
+          
+              <img
+                src="/public/images/travel5.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="/public/images/travel6.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+              />
+          
+              <img
+                src="/public/images/travel7.jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="/src/js/index.js"></script>
+</html>

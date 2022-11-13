@@ -1,0 +1,50 @@
+
+.card-container {
+    width: 100%;
+    background: rgb(251,202,63);
+    background: radial-gradient(circle, rgba(251,202,63,1) 0%, rgba(252,79,70,1) 100%); 
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-card {
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .3);
+}
+.form-internal-container {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.galery-container {
+    background: rgb(251,202,63);
+    background: radial-gradient(circle, rgba(251,202,63,1) 0%, rgba(252,79,70,1) 100%); 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.galery {
+    width: 80%;
+}
+@media screen and (max-width: 990px) {
+    .card-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-container, .form-internal-container{
+        flex-direction: column;
+    }
+}
